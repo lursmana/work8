@@ -1,0 +1,12 @@
+footer {
+    height: 8.3125rem;
+align-self: stretch;
+display: flex;
+justify-content:space-around;
+align-items: center;
+}
+
+footer ul {
+    display: flex;
+    gap: 1.5rem;
+}

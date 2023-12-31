@@ -1,8 +1,11 @@
+
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #f1f1f1;
   max-width: 100vw;
+  min-height: 100vh;
 }
 
 .usbcable {
@@ -100,4 +103,53 @@ input[type="password"] {
   border: none;
   color: white;
   margin-bottom: 1.87rem;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 5rem;
+    
+  }
+  
+  
+  .headerright {
+    display: none;
+
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+.usbcable {
+  height: unset;
+}
+
+  #mainmail {
+    width: 6rem;
+        height: 1.5rem;
+    padding: 1rem 11.0625rem 1rem 1rem;
+    height: unset;
+    
+  }
+
+  .Password {
+    display: flex;
+    flex-direction: column;
+gap: 0;
+  }
+
+  input[type="password"] {
+    width: 6rem;
+    height: 1.5rem;
+    padding: 1rem 12.0625rem 1rem 1rem;
+  }
+
 }
